@@ -4,6 +4,8 @@ import group2 from "../src/assets/group2.svg";
 import group3 from "../src/assets/group3.svg";
 import group4 from "../src/assets/group4.svg";
 import group5 from "../src/assets/group5.svg";
+import { GrFacebookOption } from "react-icons/gr";
+import { FaInstagram, FaLinkedinIn, FaTwitter, FaYoutube } from "react-icons/fa";
 
 function App() {
   return (
@@ -131,25 +133,49 @@ function App() {
             <button className="w-[160px] h-[40px] mt-10 text-white bg-[#111B47] rounded-md">Purchase Now</button>
           </div>
         </div>
-
-        <div className="flex flex-col items-center text-center mt-40 py-52 bg-[#FBFBFD]">
-          <span className="font-medium text-[36px] text-[#091133]">A Price To Suit Everyone</span>
-          <span className=" w-1/2 text-[#6F7CB2] mt-4">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus{" "}
-          </span>
-          <span className="text-[50px] font-medium text-[#222F65]">$40</span>
-          <span className="text-[#37447E]">UI Design Kit</span>
-          <div className="flex flex-col mt-10 gap-3">
-            <span className="text-[#5D6970] text-[14px]">See, One price. Simple.</span>
-            <button className="w-[200px] h-[40px] text-white bg-[#111B47] rounded-md">Purchase Now</button>
-          </div>
+      </div>
+      <div className="flex flex-col items-center text-center mt-40 pb-44 bg-[#F2F5FF]">
+        <svg
+          className=" relative block w-full calc:w-full[1.3px] h-[50px]"
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z" className=" fill-white"></path>
+        </svg>
+        <span className="font-medium text-[36px] text-[#091133] mt-44">A Price To Suit Everyone</span>
+        <span className=" w-1/2 text-[#6F7CB2] mt-4">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+          sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus{" "}
+        </span>
+        <span className="text-[50px] font-medium text-[#222F65]">$40</span>
+        <span className="text-[#37447E]">UI Design Kit</span>
+        <div className="flex flex-col mt-10 gap-3">
+          <span className="text-[#5D6970] text-[14px]">See, One price. Simple.</span>
+          <button className="w-[200px] h-[40px] text-white bg-[#111B47] rounded-md">Purchase Now</button>
         </div>
       </div>
-      <footer className="bg-[#E7ECFF] py-24">
-        <span>©2023 Yourcompany</span>
-        <span>Landing</span>
-        <button className="w-[100px] h-[25px] text-white bg-[#111B47] rounded-md">Purchase Now</button>
+      <footer className="bg-[#E7ECFF] py-12">
+        <div className="container mx-auto px-16 flex items-center justify-between border-b pb-12 border-[#CDD1D4]">
+          <span className=" text-[#939EA4]">©2023 Yourcompany</span>
+          <span className="text-[#37447E] text-[38px] font-bold">Landing</span>
+          <button className="w-[150px] h-[40px] text-white bg-[#111B47] rounded-md">Purchase Now</button>
+        </div>
+        <div className="flex justify-between container mx-auto px-16 mt-6">
+          <div className="flex gap-10 text-[#929ECC]">
+            <span>Home</span>
+            <span>About</span>
+            <span>Contact</span>
+          </div>
+          <div className="flex gap-8 text-[#5D6970]">
+            <GrFacebookOption />
+            <FaLinkedinIn />
+            <FaTwitter />
+            <FaYoutube />
+            <FaInstagram />
+          </div>
+        </div>
       </footer>
     </>
   );

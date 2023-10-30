@@ -5,7 +5,11 @@ export default {
     fontFamily: {
       roboto: ["Roboto", "sans-serif"],
     },
-    extend: {},
+    extend: {
+      width: {
+        "full[1.3px]": "calc(100% + 1.3px)",
+      },
+    },
   },
   plugins: [],
 };
